@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Orçamento Aço">>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Orçamento de Aço</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/orcamento-aco/sw.js');
+  }
+</script>body {
       font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: #e2e8f0;
